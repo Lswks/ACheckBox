@@ -7,7 +7,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
 import com.example.checkbox.BBox;
 
@@ -22,14 +21,14 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        b = (BBox) findViewById(R.id.BBox2);
+//        b = (BBox) findViewById(R.id.BBox2);
 
-        b.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
-            @Override
-            public void onChange(boolean checked) {
-                Toast.makeText(getApplicationContext(),String.valueOf(checked),Toast.LENGTH_SHORT).show();
-            }
-        });
+//        b.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+//            @Override
+//            public void onChange(boolean checked) {
+//                Toast.makeText(getApplicationContext(),String.valueOf(checked),Toast.LENGTH_SHORT).show();
+//            }
+//        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
