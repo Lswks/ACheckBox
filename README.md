@@ -9,7 +9,9 @@
 
 ---
 
-![](http://ww2.sinaimg.cn/mw690/b45f56f6gw1f6ucxdyajxg20a00hs1l7.gif)
+<video width="480" height="320" controls>
+<source src="movie.mp4">
+</video>
 
 ---
 ![](http://ww4.sinaimg.cn/mw690/b45f56f6gw1f6ucv75nsfj20u01hc76z.jpg)
