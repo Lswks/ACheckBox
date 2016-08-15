@@ -23,6 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:check_text="算法"
+        app:show_border="true"
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
         app:check_style="hook"
@@ -36,6 +37,7 @@
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
         app:check_style="fork"
+        app:show_border="true"
         android:id="@+id/BBox2"/>
 
     <com.example.checkbox.BBox
@@ -46,6 +48,7 @@
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
         app:check_style="fork"
+        app:show_border="true"
         android:id="@+id/BBox4"/>
 
     <com.example.checkbox.BBox
@@ -53,9 +56,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:check_text="网络"
+        app:show_border="false"
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
-        app:check_style="fork"
+        app:check_style="hook"
         android:id="@+id/BBox5"/>
 
     <com.example.checkbox.BBox
@@ -63,6 +67,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:check_text="单词"
+        app:show_border="false"
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
         app:check_style="fork"
@@ -73,8 +78,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:check_text="女票"
+        app:show_border="false"
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
-        app:check_style="fork"
+        app:check_style="hook"
         android:id="@+id/BBox7"/>
 </LinearLayout>

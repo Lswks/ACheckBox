@@ -57,6 +57,7 @@ public class BBox extends View implements Checkable{
     private ValueAnimator cValueAnimator2;
     private boolean checked = false;
     private boolean isHook = true;
+    private boolean isShowBorder = false;
     private int mScreenWidth,mSreenHeight;
     private OnCheckedChangeListener mOnCheckedChangeListener;
 
@@ -74,6 +75,7 @@ public class BBox extends View implements Checkable{
             colorBefore = array.getColor(R.styleable.BBox_color_before,Color.BLACK);
             boxText = array.getString(R.styleable.BBox_check_text);
             isHook = array.getInt(R.styleable.BBox_check_style, 1) == 1;
+            isShowBorder = array.getBoolean(R.styleable.BBox_show_border,false);
             if(boxText == null){
                 boxText = "CheckBox";
             }
@@ -301,9 +303,13 @@ public class BBox extends View implements Checkable{
 
             mDst.lineTo(0,0);
             canvas.translate(wStart + paddingLeft, hStart + paddingTop);
+            if(isShowBorder) {
+                canvas.save();
+            }
+
             canvas.drawText(boxText, wStart  + wSize + 18, (hSize + textSize )/2, mPaintText);
             //确保图形在正中
-            canvas.translate(-AnimationValue4 * wSize, -AnimationValue4 * hSize * 2);
+            canvas.translate(-AnimationValue4 * wSize, (float) (-AnimationValue4 * hSize * 1.5));
             /**
              * 如果 startWithMoveTo 为 true, 则被截取出来到Path片段保持原状，如果 startWithMoveTo 为 false，
              * 则会将截取出来的 Path 片段的起始点移动到 dst 的最后一个点，以保证 dst 的连续性。
@@ -315,12 +321,22 @@ public class BBox extends View implements Checkable{
             mPaint.setAlpha(AnimationValue);
             mPaintAfter.setAlpha(255 - AnimationValue);
 
+
             canvas.rotate(AnimationValue1, wStart  + wSize / 2, hStart  + hSize / 2);
             canvas.drawPath(mDst, mPaint);
             canvas.drawPath(mDst, mPaintAfter);
+
+            if(isShowBorder) {
+                canvas.restore();
+                canvas.drawRect(wStart, hStart, wStart + wSize, hSize + hStart, mPaintText);
+            }
+
         }else {
             mDst.lineTo(0,0);
             canvas.translate(wStart+ paddingLeft , hStart + paddingTop );
+            if(isShowBorder) {
+                canvas.save();
+            }
             canvas.drawText(boxText, wStart  + wSize + 18, (hSize + textSize )/2, mPaintText);
             mDst.moveTo((float) (wStart + cAnimationValue * 0.3), (float) (hStart + cAnimationValue * 0.3));
 
@@ -336,6 +352,10 @@ public class BBox extends View implements Checkable{
             canvas.drawPath(mDst,mPaint);
             mPaintAfter.setAlpha((int) (255-cAnimationValue2));
             canvas.drawPath(mDst,mPaintAfter);
+            if(isShowBorder) {
+                canvas.restore();
+                canvas.drawRect(wStart, hStart, wStart + wSize, hSize + hStart, mPaintText);
+            }
         }
 
     }

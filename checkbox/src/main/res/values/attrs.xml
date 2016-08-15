@@ -9,5 +9,6 @@
         <attr name="color_before" format="color" />
         <attr name="color_after" format="color" />
         <attr name="check_text" format="string" />
+        <attr name="show_border" format="boolean"/>
     </declare-styleable>
 </resources>
