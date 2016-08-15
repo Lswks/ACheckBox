@@ -17,7 +17,8 @@ dependencies {
 |color_before|color|
 |color_after|color|
 |check_text|string|
-|check_style|for/hook|
+|check_style|fork/hook|
+|show_border|boolean|
 
 
 ## Usage
