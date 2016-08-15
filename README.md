@@ -9,9 +9,7 @@
 
 ---
 
-<video width="480" height="320" controls>
-<source src="device-2016-08-15-114451.mp4">
-</video>
+![](http://ww3.sinaimg.cn/large/b45f56f6gw1f6ue3ur1bdg20e30p2dje.gif)
 
 ---
 ![](http://ww4.sinaimg.cn/mw690/b45f56f6gw1f6ucv75nsfj20u01hc76z.jpg)
