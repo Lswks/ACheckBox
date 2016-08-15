@@ -48,7 +48,7 @@ dependencies {
 
 ![](http://ww4.sinaimg.cn/large/b45f56f6gw1f6uorqbo03j219628aguj.jpg)
 
-![](http://ww2.sinaimg.cn/large/b45f56f6gw1f6uopw2jydj219628agul.jpg)
+![](http://ww1.sinaimg.cn/large/b45f56f6gw1f6up4942pwj219628awnk.jpg)
 
 ---
 
