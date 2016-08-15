@@ -10,30 +10,71 @@
     tools:showIn="@layout/activity_main"
     android:orientation="vertical">
 
-
-
-    <com.example.checkbox.BBox
+    <TextView
+        android:text="假期安排"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:check_text=""
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"/>
+
+    <com.example.checkbox.BBox
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:check_text="算法"
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
         app:check_style="hook"
         android:id="@+id/BBox3" />
 
     <com.example.checkbox.BBox
+        android:padding="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:check_text="CheckoxHook"
+        app:check_text="Android开发艺术探索"
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
         app:check_style="fork"
         android:id="@+id/BBox2"/>
 
-    <CheckBox
-        android:text="CheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBoxCheckBox"
+    <com.example.checkbox.BBox
+        android:padding="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/checkBox" />
+        app:check_text="Core Java"
+        app:color_after="@color/colorAccent"
+        app:color_before="@color/colorPrimary"
+        app:check_style="fork"
+        android:id="@+id/BBox4"/>
 
+    <com.example.checkbox.BBox
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:check_text="网络"
+        app:color_after="@color/colorAccent"
+        app:color_before="@color/colorPrimary"
+        app:check_style="fork"
+        android:id="@+id/BBox5"/>
+
+    <com.example.checkbox.BBox
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:check_text="单词"
+        app:color_after="@color/colorAccent"
+        app:color_before="@color/colorPrimary"
+        app:check_style="fork"
+        android:id="@+id/BBox6"/>
+
+    <com.example.checkbox.BBox
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:check_text="女票"
+        app:color_after="@color/colorAccent"
+        app:color_before="@color/colorPrimary"
+        app:check_style="fork"
+        android:id="@+id/BBox7"/>
 </LinearLayout>

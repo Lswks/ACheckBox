@@ -10,7 +10,6 @@ import android.graphics.Path;
 import android.graphics.PathMeasure;
 import android.util.AttributeSet;
 import android.util.Log;
-import android.util.TypedValue;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.Checkable;
@@ -23,13 +22,13 @@ import android.widget.Checkable;
 public class BBox extends View implements Checkable{
 
     private static final String TAG = BBox.class.getSimpleName();
-    private int hSize = dp2px(100);
-    private int wSize = dp2px(100);
+    private int hSize = dp2px(15);
+    private int wSize = dp2px(15);
     private int textSize = dp2px(15);
     private int wStart = dp2px(1);
     private int hStart = dp2px(1);
     private int Duration = 300;
-    private int strokeWidth = dp2px(8);
+    private int strokeWidth = dp2px(2);
     private int colorBefore = Color.BLACK;
     private int colorAfter = Color.RED;
     private String boxText = "CheckBox";
@@ -172,7 +171,7 @@ public class BBox extends View implements Checkable{
             valueAnimator3.setInterpolator(new DecelerateInterpolator());
             valueAnimator4.setInterpolator(new DecelerateInterpolator());
         }else {
-            cValueAnimator = ValueAnimator.ofFloat(0,(int)(hSize * 0.41));
+            cValueAnimator = ValueAnimator.ofFloat(0,(int)(hSize * 0.4));
             cValueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
                 @Override
                 public void onAnimationUpdate(ValueAnimator animation) {
@@ -230,8 +229,6 @@ public class BBox extends View implements Checkable{
         int paddingTop = getPaddingTop() + 10;
         int paddingBottom = getPaddingBottom() + 10;
 
-
-        textSize = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 15, getResources().getDisplayMetrics());
 
         if(widthSpecMode == MeasureSpec.AT_MOST && heightSpecMode == MeasureSpec.AT_MOST){
             setMeasuredDimension(2* strokeWidth +  wStart + wSize  + 20 + paddingLeft + textSize * boxText.length(),hStart + hSize + paddingTop + paddingBottom + 2 * strokeWidth);
@@ -304,7 +301,7 @@ public class BBox extends View implements Checkable{
 
             mDst.lineTo(0,0);
             canvas.translate(wStart + paddingLeft, hStart + paddingTop);
-            canvas.drawText(boxText, wStart + paddingLeft + wSize + 18, (hSize + textSize )/2, mPaintText);
+            canvas.drawText(boxText, wStart  + wSize + 18, (hSize + textSize )/2, mPaintText);
             //确保图形在正中
             canvas.translate(-AnimationValue4 * wSize, -AnimationValue4 * hSize * 2);
             /**
@@ -324,9 +321,9 @@ public class BBox extends View implements Checkable{
         }else {
             mDst.lineTo(0,0);
             canvas.translate(wStart+ paddingLeft , hStart + paddingTop );
+            canvas.drawText(boxText, wStart  + wSize + 18, (hSize + textSize )/2, mPaintText);
+            mDst.moveTo((float) (wStart + cAnimationValue * 0.3), (float) (hStart + cAnimationValue * 0.3));
 
-            canvas.drawText(boxText, wStart + paddingLeft + wSize + 18, (hSize + textSize )/2, mPaintText);
-            mDst.moveTo((float) (wStart + cAnimationValue * 0.2), (float) (hStart + cAnimationValue * 0.2));
             mDst.lineTo(wStart + wSize/2, (float) (hStart + cAnimationValue + cAnimationValue * 0.2));
             mDst.lineTo((float) (wStart+ wSize - cAnimationValue * 0.2), (float) (hStart + cAnimationValue * 0.2));
             mDst.lineTo((float) (wStart+ wSize -cAnimationValue - cAnimationValue * 0.2),hSize/2 + hStart );
@@ -334,7 +331,7 @@ public class BBox extends View implements Checkable{
             mDst.lineTo(wStart+ wSize/2, (float) (hStart  + hSize - cAnimationValue - cAnimationValue * 0.2));
             mDst.lineTo((float) (wStart + cAnimationValue * 0.2), (float) (hStart  + hSize - cAnimationValue * 0.2));
             mDst.lineTo((float) (wStart + cAnimationValue + cAnimationValue * 0.2),hStart  + hSize/2);
-            mDst.lineTo((float) (wStart + cAnimationValue * 0.2), (float) (hStart + cAnimationValue * 0.2));
+            mDst.lineTo((float) (wStart + cAnimationValue * 0.3), (float) (hStart + cAnimationValue * 0.3));
             mPaint.setAlpha((int) cAnimationValue2);
             canvas.drawPath(mDst,mPaint);
             mPaintAfter.setAlpha((int) (255-cAnimationValue2));
@@ -374,9 +371,10 @@ public class BBox extends View implements Checkable{
     }
 
 
+
     public int dp2px(float value) {
-        final float scale = getContext().getResources().getDisplayMetrics().densityDpi;
-        return (int) (value * (scale / 160) + 0.5f);
+        float density = getResources().getDisplayMetrics().density;
+        return (int) (value * density + 0.5f);
     }
 
 
