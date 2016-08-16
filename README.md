@@ -1,6 +1,6 @@
 # ACheckBox
 This is a simple CheckBox for Android with cool animation. 
-
+[ ![Download](https://api.bintray.com/packages/bigmercu/maven/bCheckbox/images/download.svg) ](https://bintray.com/bigmercu/maven/bCheckbox/_latestVersion)
 
 ## Import to your project
 ### Gradle
