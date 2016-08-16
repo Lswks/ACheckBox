@@ -7,9 +7,28 @@ This is a simple CheckBox for Android with cool animation.
 ### Gradle
 ```
 dependencies {
-    compile 'com.example.checkbox:checkbox:1.0'
+...
+    compile 'com.example.checkbox:checkbox:1.02'
 }
 ```
+
+### Maven
+** in project build.gradle **
+``` 
+ maven {
+            url 'https://dl.bintray.com/bigmercu/maven/'
+        }
+...
+```
+** in module build.gradle **
+```
+dependencies {
+  ...
+    compile 'com.bigmercu.bCheckbox:BCheckbox:1.05'
+}
+
+```
+
 
 ## Attrs
 |attr|format|
@@ -25,12 +44,35 @@ dependencies {
 ## Usage
 ### In Layout File
 ``` xml
+    <com.bigmercu.bCheckbox.BBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+```
+or
 
+``` xml
+<com.example.checkbox.BBox
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:check_text="算法"
+        app:show_border="true"
+        app:color_after="@color/colorAccent"
+        app:color_before="@color/colorPrimary"
+        app:check_style="hook"
+        android:id="@+id/BBox3" />
 ```
 
 ### In Java File
 ``` java
-
+ mBBox = (BBox) findViewById(R.id.BBox3);
+        mBBox.setChecked(true);
+        mBBox.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+            @Override
+            public void onChange(boolean checked) {
+                Toast.makeText(getApplicationContext(),"click",Toast.LENGTH_SHORT).show();
+            }
+        });
 ```
 
 ---
