@@ -1,5 +1,5 @@
 # ACheckBox
-[ ![Download](https://api.bintray.com/packages/bigmercu/maven/bCheckbox/images/download.svg) ](https://bintray.com/bigmercu/maven/bCheckbox/_latestVersion)
+[ ![Download](https://api.bintray.com/packages/bigmercu/maven/b-checkbox/images/download.svg) ](https://bintray.com/bigmercu/maven/b-checkbox/_latestVersion)
 
 This is a simple CheckBox for Android with cool animation. 
 
