@@ -1,5 +1,6 @@
 # ACheckBox
 [ ![Download](https://api.bintray.com/packages/bigmercu/maven/b-checkbox/images/download.svg) ](https://bintray.com/bigmercu/maven/b-checkbox/_latestVersion)
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ACheckBox-green.svg?style=true)](https://android-arsenal.com/details/1/4183)
 
 This is a simple CheckBox for Android with cool animation. 
 
