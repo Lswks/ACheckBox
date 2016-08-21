@@ -7,7 +7,8 @@ This is a simple CheckBox for Android with cool animation.
 ## Import to your project
 ### Gradle
 ```
-please wait a day.
+//not work now
+compile 'com.bigmercu.cBox:cbox:1.06'
 ```
 
 ### Maven
@@ -48,14 +49,7 @@ dependencies {
 ## Usage
 ### In Layout File
 ``` xml
-    <com.bigmercu.bCheckbox.BBox
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-```
-or
-
-``` xml
-<com.example.checkbox.BBox
+<com.bigmercu.cBox.BBox
         android:padding="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
