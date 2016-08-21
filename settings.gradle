@@ -1,1 +1,1 @@
-include ':app', ':checkbox', ':BCheckbox'
+include ':app', ':cbox'
