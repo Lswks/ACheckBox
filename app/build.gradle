@@ -4,7 +4,7 @@ android {
     compileSdkVersion 23
     buildToolsVersion "24.0.1"
     defaultConfig {
-        applicationId "com.example.bigmercu.acheckbox"
+        applicationId "com.bigmercu.bigmercu.myapplication"
         minSdkVersion 15
         targetSdkVersion 23
         versionCode 1
@@ -25,9 +25,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha4'
+    compile 'com.bigmercu.cBox:cbox:1.06'
     compile 'com.android.support:design:23.4.0'
     testCompile 'junit:junit:4.12'
-    compile project(':BCheckbox')
     compile 'com.android.support:cardview-v7:24.2.0'
 }

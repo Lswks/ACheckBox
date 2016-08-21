@@ -34,10 +34,10 @@ dependencies {
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "1.05"
+version = "1.06"
 def siteUrl = "https://github.com/Bigmercu/ACheckBox"
 def gitUrl = "git@github.com:Bigmercu/ACheckBox.git"
-group = "com.bigmercu.bCheckbox"
+group = "com.bigmercu.cBox"
 
 install {
     repositories.mavenInstaller {
@@ -45,7 +45,7 @@ install {
         pom {
             project {
                 packaging 'aar'
-                name 'This is a simple checkbox with cool animation for android by bigmercu.'
+                name 'This is a simple checkbox with amazing animation for android by bigmercu.'
                 url siteUrl
                 licenses {
                     license {
@@ -101,7 +101,7 @@ bintray {
     configurations = ['archives']
     pkg {
         repo = "maven"
-        name = "bCheckbox"
+        name = "cBox"
         websiteUrl = siteUrl
         vcsUrl = gitUrl
         licenses = ["Apache-2.0"]
