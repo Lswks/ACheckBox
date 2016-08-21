@@ -85,6 +85,7 @@ or
 ---
 
 ## screenShot
+![](http://ww2.sinaimg.cn/large/b45f56f6gw1f71mvl0htlg20ds06igmg.gif)
 ![](http://ww3.sinaimg.cn/large/b45f56f6gw1f71ml8iizyg204y08su0x.gif)
 ![](http://ww4.sinaimg.cn/large/b45f56f6gw1f71mfjp0hfj20xv1vtq8u.jpg)
 ![](http://ww3.sinaimg.cn/large/b45f56f6gw1f71mhp5xbhj20xq1vpq90.jpg)
