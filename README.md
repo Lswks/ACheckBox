@@ -76,7 +76,7 @@ dependencies {
 ---
 
 ## About
-- 新浪微博@bigmercu
+- 新浪微博[@bigmercu](http://weibo.com/bigmercu)
 - Email: bigmercu@gmail.com
 
 ---
