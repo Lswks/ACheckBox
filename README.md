@@ -1,5 +1,5 @@
 # ACheckBox
-[ ![Download](https://api.bintray.com/packages/bigmercu/maven/b-checkbox/images/download.svg) ](https://bintray.com/bigmercu/maven/b-checkbox/_latestVersion)
+ [ ![Download](https://api.bintray.com/packages/bigmercu/maven/cBox/images/download.svg) ](https://bintray.com/bigmercu/maven/cBox/_latestVersion)
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-ACheckBox-green.svg?style=true)](https://android-arsenal.com/details/1/4183)
 
 This is a simple CheckBox for Android with cool animation. 
@@ -7,25 +7,22 @@ This is a simple CheckBox for Android with cool animation.
 ## Import to your project
 ### Gradle
 ```
-dependencies {
-...
-    compile 'com.example.checkbox:checkbox:1.02'
-}
+please wait a day.
 ```
 
 ### Maven
-** in project build.gradle **
+#### in  build.gradle of your project
 ``` 
  maven {
             url 'https://dl.bintray.com/bigmercu/maven/'
         }
 ...
 ```
-** in module build.gradle **
+#### in build.gradle of your Module
 ```
 dependencies {
   ...
-    compile 'com.bigmercu.bCheckbox:BCheckbox:1.05'
+    compile 'com.bigmercu.cBox:cbox:1.06'
 }
 
 ```
@@ -40,6 +37,7 @@ dependencies {
 |check_text|string|
 |check_style|fork/hook|
 |show_border|boolean|
+|is_circle_border|boolean|
 
 
 ## Usage
@@ -61,19 +59,19 @@ or
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
         app:check_style="hook"
+        app:is_circle_border="true"
         android:id="@+id/BBox3" />
 ```
 
 ### In Java File
 ``` java
- mBBox = (BBox) findViewById(R.id.BBox3);
-        mBBox.setChecked(true);
-        mBBox.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+        setChecked(boolean);
+        setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
-                Toast.makeText(getApplicationContext(),"click",Toast.LENGTH_SHORT).show();
             }
         });
+        mBBox.isChecked()
 ```
 
 ---
