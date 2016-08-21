@@ -85,17 +85,15 @@ or
 ---
 
 ## screenShot
-![](http://ww4.sinaimg.cn/large/b45f56f6gw1f6ueokzh07g207a0cxdkl.gif)
-
-![](http://ww3.sinaimg.cn/large/b45f56f6gw1f6ueatdq0jg207a0cy40t.gif)
-
-
-![](http://ww4.sinaimg.cn/large/b45f56f6gw1f6uorqbo03j219628aguj.jpg)
-
-![](http://ww1.sinaimg.cn/large/b45f56f6gw1f6up4942pwj219628awnk.jpg)
-
+![](http://ww3.sinaimg.cn/large/b45f56f6gw1f71ml8iizyg204y08su0x.gif)
+![](http://ww4.sinaimg.cn/large/b45f56f6gw1f71mfjp0hfj20xv1vtq8u.jpg)
+![](http://ww3.sinaimg.cn/large/b45f56f6gw1f71mhp5xbhj20xq1vpq90.jpg)
+![](http://ww2.sinaimg.cn/large/b45f56f6gw1f71mhu93voj20y71wfwkh.jpg)
 ---
 
+## what's new
+2016-08-15:first update.
+2016-08-21:add the circle border and lots of Code refactoring.
 
 ##License
 ```
