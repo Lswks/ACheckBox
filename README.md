@@ -93,8 +93,8 @@ or
 ---
 
 ## what's new
-2016-08-15:first update.
-2016-08-21:add the circle border and lots of Code refactoring.
+- 2016-08-15:first update.
+- 2016-08-21:add the circle border and lots of Code refactoring.
 
 ##License
 ```
