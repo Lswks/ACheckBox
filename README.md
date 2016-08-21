@@ -13,9 +13,14 @@ please wait a day.
 ### Maven
 #### in  build.gradle of your project
 ``` 
- maven {
+allprojects {
+    repositories {
+        jcenter()
+        maven {
             url 'https://dl.bintray.com/bigmercu/maven/'
         }
+    }
+}
 ...
 ```
 #### in build.gradle of your Module
