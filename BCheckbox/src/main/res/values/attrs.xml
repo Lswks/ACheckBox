@@ -5,10 +5,10 @@
             <enum name="fork" value="0" />
             <enum name="hook" value="1" />
         </attr>
-        <attr name="stroke_width" format="dimension" />
         <attr name="color_before" format="color" />
         <attr name="color_after" format="color" />
         <attr name="check_text" format="string" />
         <attr name="show_border" format="boolean"/>
+        <attr name="is_circle_border" format="boolean"/>
     </declare-styleable>
 </resources>

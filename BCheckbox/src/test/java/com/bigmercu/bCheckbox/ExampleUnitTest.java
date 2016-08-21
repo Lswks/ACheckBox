@@ -1,4 +1,4 @@
-package com.example.checkbox;
+package com.bigmercu.bCheckbox;
 
 import org.junit.Test;
 

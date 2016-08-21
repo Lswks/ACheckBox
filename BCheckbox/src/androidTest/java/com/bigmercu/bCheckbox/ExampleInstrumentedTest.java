@@ -1,4 +1,4 @@
-package com.example.checkbox;
+package com.bigmercu.bCheckbox;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.checkbox.test", appContext.getPackageName());
+        assertEquals("com.bigmercu.bCheckbox.test", appContext.getPackageName());
     }
 }
