@@ -7,8 +7,7 @@ This is a simple CheckBox for Android with cool animation.
 ## Import to your project
 ### Gradle
 ```
-//not work now
-compile 'com.bigmercu.cBox:cbox:1.06'
+compile 'com.bigmercu.cBox:cbox:1.08'
 ```
 
 ### Maven
@@ -28,7 +27,7 @@ allprojects {
 ```
 dependencies {
   ...
-    compile 'com.bigmercu.cBox:cbox:1.06'
+    compile 'com.bigmercu.cBox:cbox:1.08'
 }
 
 ```
@@ -49,7 +48,7 @@ dependencies {
 ## Usage
 ### In Layout File
 ``` xml
-<com.bigmercu.cBox.BBox
+<com.bigmercu.cBox.CheckBox
         android:padding="5dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -58,26 +57,19 @@ dependencies {
         app:color_after="@color/colorAccent"
         app:color_before="@color/colorPrimary"
         app:check_style="hook"
-        app:is_circle_border="true"
-        android:id="@+id/BBox3" />
+        app:is_circle_border="true"/>
 ```
 
 ### In Java File
 ``` java
-        setChecked(boolean);
-        setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+        mCheckBox.setChecked(boolean);
+        mCheckBox.setOnCheckedChangeListener(new CheckBox..OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
             }
         });
-        mBBox.isChecked()
+        mCheckBox.isChecked()
 ```
-
----
-
-## About
-- 新浪微博[@bigmercu](http://weibo.com/bigmercu)
-- Email: bigmercu@gmail.com
 
 ---
 
@@ -87,11 +79,17 @@ dependencies {
 ![](http://ww4.sinaimg.cn/large/b45f56f6gw1f71mfjp0hfj20xv1vtq8u.jpg)
 ![](http://ww3.sinaimg.cn/large/b45f56f6gw1f71mhp5xbhj20xq1vpq90.jpg)
 ![](http://ww2.sinaimg.cn/large/b45f56f6gw1f71mhu93voj20y71wfwkh.jpg)
----
+
 
 ## what's new
-- 2016-08-15:first update.
 - 2016-08-21:add the circle border and lots of Code refactoring.
+- 2016-08-15:first update.
+
+---
+
+## About
+- 新浪微博: [@bigmercu](http://weibo.com/bigmercu)
+- Email: bigmercu@gmail.com
 
 ##License
 ```
