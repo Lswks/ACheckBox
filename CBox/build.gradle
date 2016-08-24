@@ -34,7 +34,7 @@ dependencies {
 apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
-version = "1.07"
+version = "1.08"
 def siteUrl = "https://github.com/Bigmercu/ACheckBox"
 def gitUrl = "git@github.com:Bigmercu/ACheckBox.git"
 group = "com.bigmercu.cBox"
