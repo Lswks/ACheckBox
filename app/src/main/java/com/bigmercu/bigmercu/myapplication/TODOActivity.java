@@ -1,10 +1,8 @@
 package com.bigmercu.bigmercu.myapplication;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 
 import com.bigmercu.cBox.CheckBox;
 
@@ -38,35 +36,30 @@ public class TODOActivity extends AppCompatActivity {
         mCheckBoxAlo.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
-//                Toast.makeText(getApplicationContext(),"算法",Toast.LENGTH_SHORT).show();
             }
         });
 
         mCheckBoxAndroidArt.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
-//                Toast.makeText(getApplicationContext(),"开发艺术探索",Toast.LENGTH_SHORT).show();
             }
         });
 
         mCheckBoxCoreJava.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
-//                Toast.makeText(getApplicationContext(),"Core Java",Toast.LENGTH_SHORT).show();
             }
         });
 
         mCheckBoxNet.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
-//                Toast.makeText(getApplicationContext(),"网络",Toast.LENGTH_SHORT).show();
             }
         });
 
         mCheckBoxWord.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
-//                Toast.makeText(getApplicationContext(),"背单词",Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -86,13 +79,6 @@ public class TODOActivity extends AppCompatActivity {
                     mCheckBoxNet.setChecked(true);
                     mCheckBoxWord.setChecked(true);
                 }
-            }
-        });
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
             }
         });
     }

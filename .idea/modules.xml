@@ -4,7 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Checkbox.iml" filepath="$PROJECT_DIR$/Checkbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cbox/cbox.iml" filepath="$PROJECT_DIR$/cbox/cbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cBox/cbox.iml" filepath="$PROJECT_DIR$/cBox/cbox.iml" />
     </modules>
   </component>
 </project>
