@@ -6,16 +6,17 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import com.bigmercu.cBox.BBox;
+import com.bigmercu.cBox.CheckBox;
+
 
 public class TODOActivity extends AppCompatActivity {
 
-    private BBox mBBoxAlo;
-    private BBox mBBoxAndroidArt;
-    private BBox mBBoxCoreJava;
-    private BBox mBBoxNet;
-    private BBox mBBoxWord;
-    private BBox mBBoxGirl;
+    private CheckBox mCheckBoxAlo;
+    private CheckBox mCheckBoxAndroidArt;
+    private CheckBox mCheckBoxCoreJava;
+    private CheckBox mCheckBoxNet;
+    private CheckBox mCheckBoxWord;
+    private CheckBox mCheckBoxGirl;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,63 +28,63 @@ public class TODOActivity extends AppCompatActivity {
     }
 
     private void initView(){
-        mBBoxAlo = (BBox) findViewById(R.id.BBox3);
-        mBBoxAndroidArt = (BBox) findViewById(R.id.BBox2);
-        mBBoxCoreJava = (BBox) findViewById(R.id.BBox4);
-        mBBoxNet = (BBox) findViewById(R.id.BBox5);
-        mBBoxWord = (BBox) findViewById(R.id.BBox6);
-        mBBoxGirl = (BBox) findViewById(R.id.BBox7);
-        mBBoxAlo.setChecked(true);
-        mBBoxAlo.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+        mCheckBoxAlo = (CheckBox) findViewById(R.id.BBox3);
+        mCheckBoxAndroidArt = (CheckBox) findViewById(R.id.BBox2);
+        mCheckBoxCoreJava = (CheckBox) findViewById(R.id.BBox4);
+        mCheckBoxNet = (CheckBox) findViewById(R.id.BBox5);
+        mCheckBoxWord = (CheckBox) findViewById(R.id.BBox6);
+        mCheckBoxGirl = (CheckBox) findViewById(R.id.BBox7);
+        mCheckBoxAlo.setChecked(true);
+        mCheckBoxAlo.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
 //                Toast.makeText(getApplicationContext(),"算法",Toast.LENGTH_SHORT).show();
             }
         });
 
-        mBBoxAndroidArt.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+        mCheckBoxAndroidArt.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
 //                Toast.makeText(getApplicationContext(),"开发艺术探索",Toast.LENGTH_SHORT).show();
             }
         });
 
-        mBBoxCoreJava.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+        mCheckBoxCoreJava.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
 //                Toast.makeText(getApplicationContext(),"Core Java",Toast.LENGTH_SHORT).show();
             }
         });
 
-        mBBoxNet.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+        mCheckBoxNet.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
 //                Toast.makeText(getApplicationContext(),"网络",Toast.LENGTH_SHORT).show();
             }
         });
 
-        mBBoxWord.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+        mCheckBoxWord.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
 //                Toast.makeText(getApplicationContext(),"背单词",Toast.LENGTH_SHORT).show();
             }
         });
 
-        mBBoxGirl.setOnCheckedChangeListener(new BBox.OnCheckedChangeListener() {
+        mCheckBoxGirl.setOnCheckedChangeListener(new CheckBox.OnCheckedChangeListener() {
             @Override
             public void onChange(boolean checked) {
                 if (checked){
-                    mBBoxAlo.setChecked(false);
-                    mBBoxAndroidArt.setChecked(false);
-                    mBBoxCoreJava.setChecked(false);
-                    mBBoxNet.setChecked(false);
-                    mBBoxWord.setChecked(false);
+                    mCheckBoxAlo.setChecked(false);
+                    mCheckBoxAndroidArt.setChecked(false);
+                    mCheckBoxCoreJava.setChecked(false);
+                    mCheckBoxNet.setChecked(false);
+                    mCheckBoxWord.setChecked(false);
                 }else {
-                    mBBoxAlo.setChecked(true);
-                    mBBoxAndroidArt.setChecked(true);
-                    mBBoxCoreJava.setChecked(true);
-                    mBBoxNet.setChecked(true);
-                    mBBoxWord.setChecked(true);
+                    mCheckBoxAlo.setChecked(true);
+                    mCheckBoxAndroidArt.setChecked(true);
+                    mCheckBoxCoreJava.setChecked(true);
+                    mCheckBoxNet.setChecked(true);
+                    mCheckBoxWord.setChecked(true);
                 }
             }
         });

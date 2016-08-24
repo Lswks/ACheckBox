@@ -22,9 +22,9 @@ import android.widget.Checkable;
  * Email:bigmercu@gmail.com
  */
 
-public class BBox extends View implements Checkable{
+public class CheckBox extends View implements Checkable{
 
-    private static final String TAG = BBox.class.getSimpleName();
+    private static final String TAG = CheckBox.class.getSimpleName();
     private int hSize = dp2px(15);
     private int wSize = dp2px(15);
     private int textSize = dp2px(15);
@@ -70,9 +70,6 @@ public class BBox extends View implements Checkable{
     private boolean isShowBorder = false;
     private int mScreenWidth,mSreenHeight;
     private OnCheckedChangeListener mOnCheckedChangeListener;
-    private int r;
-    private int g;
-    private int b;
     private int redAfter ;
     private int greenAfter ;
     private int blueAfter ;
@@ -82,11 +79,11 @@ public class BBox extends View implements Checkable{
     private boolean isCircle;
 
 
-    public BBox(Context context) {
+    public CheckBox(Context context) {
         super(context);
     }
 
-    public BBox(Context context, AttributeSet attrs) {
+    public CheckBox(Context context, AttributeSet attrs) {
         super(context, attrs);
         mPaint = new Paint();
 
@@ -102,8 +99,6 @@ public class BBox extends View implements Checkable{
             redBefore = (colorBefore & 0xff0000) >> 16;
             greenBefore = (colorBefore & 0x00ff00) >> 8;
             blueBefore = (colorBefore & 0x0000ff);
-
-
 
             boxText = array.getString(R.styleable.BBox_check_text);
             isHook = array.getInt(R.styleable.BBox_check_style, 1) == 1;
@@ -225,7 +220,7 @@ public class BBox extends View implements Checkable{
         });
     }
 
-    public BBox(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CheckBox(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
@@ -311,10 +306,10 @@ public class BBox extends View implements Checkable{
         int paddingTop = getPaddingTop() + 10;
         int paddingBottom = getPaddingBottom() + 10;
 
-        r = (int) ((1-(float)AnimationValue/255) * redBefore+(float)AnimationValue/255 * redAfter);
-        g = (int) ((1-(float)AnimationValue/255) * greenBefore+ (float)AnimationValue/255 * greenAfter);
-        b = (int) ((1-(float)AnimationValue/255) * blueBefore+ (float)AnimationValue/255 * blueAfter);
-        mPaintColor = Color.rgb(r,g,b);
+        int r = (int) ((1 - (float) AnimationValue / 255) * redBefore + (float) AnimationValue / 255 * redAfter);
+        int g = (int) ((1 - (float) AnimationValue / 255) * greenBefore + (float) AnimationValue / 255 * greenAfter);
+        int b = (int) ((1 - (float) AnimationValue / 255) * blueBefore + (float) AnimationValue / 255 * blueAfter);
+        mPaintColor = Color.rgb(r, g, b);
         mPaint.setColor(mPaintColor);
 
         if(isHook) {

@@ -39,7 +39,7 @@
                 android:fontFamily="serif-monospace"/>
         </RelativeLayout>
     </android.support.v7.widget.CardView>
-    <com.bigmercu.cBox.BBox
+    <com.bigmercu.cBox.CheckBox
         android:padding="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,7 +50,7 @@
         app:show_border="true"
         android:id="@+id/BBox3" />
 
-    <com.bigmercu.cBox.BBox
+    <com.bigmercu.cBox.CheckBox
         android:padding="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -61,7 +61,7 @@
         app:show_border="true"
         android:id="@+id/BBox2"/>
 
-    <com.bigmercu.cBox.BBox
+    <com.bigmercu.cBox.CheckBox
         android:padding="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         app:show_border="true"
         android:id="@+id/BBox4"/>
 
-    <com.bigmercu.cBox.BBox
+    <com.bigmercu.cBox.CheckBox
         android:padding="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -83,7 +83,7 @@
         app:show_border="true"
         android:id="@+id/BBox5"/>
 
-    <com.bigmercu.cBox.BBox
+    <com.bigmercu.cBox.CheckBox
         android:padding="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
         app:is_circle_border="false"
         android:id="@+id/BBox6"/>
 
-    <com.bigmercu.cBox.BBox
+    <com.bigmercu.cBox.CheckBox
         android:padding="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

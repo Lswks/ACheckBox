@@ -25,8 +25,8 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:23.4.0'
-    compile 'com.bigmercu.cBox:cbox:1.06'
     compile 'com.android.support:design:23.4.0'
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:cardview-v7:24.2.0'
+    compile project(':cbox')
 }
